@@ -8,7 +8,7 @@ This site contains the benchmark datasets and C++ source code of the coupled mat
 
 Complaing example:
 
-g++ CMMC.cpp -o CMMC -std=c++11 -O3 -I/path/to/armadillo/\<include\>/ -I/path/to/openblas/\<include\>/ -L/path/to/openblas/openblas/\<lib\>/ -lopenblas
+<pre><code> g++ CMMC.cpp -o CMMC -std=c++11 -O3 -I/path/to/armadillo/\<include\>/ -I/path/to/openblas/\<include\>/ -L/path/to/openblas/openblas/\<lib\>/ -lopenblas </code></pre>
 
 ## Benchmark Dataset
 
@@ -43,10 +43,10 @@ The name of the chemical that used in this testing should be save in the [chem.t
 
 Example of running data generation:
 
-python 1.generate.data.py -C ./inputfolder/chem.txt -I ./inputfolder/ -O ./outputfolder/ -s 122 -N 1
+<pre><code> python 1.generate.data.py -C ./inputfolder/chem.txt -I ./inputfolder/ -O ./outputfolder/ -s 122 -N 1 </code></pre>
 
 Run 
 
-1.generate.data.py -h 
+<pre><code> python 1.generate.data.py -h </code></pre>
 
 for detils.
