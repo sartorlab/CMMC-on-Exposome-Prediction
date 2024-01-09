@@ -76,3 +76,9 @@ Run
 </code></pre>
 
 for detils.
+
+After the data generated, users can run 
+
+<pre><code> python 2.run.cmmc.py -D ./outputfolder/ </code></pre>
+
+to run CMMC to generate the prediction results.
