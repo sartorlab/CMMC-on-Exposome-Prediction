@@ -32,3 +32,21 @@ For each dataset:
  - 10 "test.index.[X].txt" files are the indexes of randomly selected true positive and true negative interactions in corresponding chemical gene interaction matrices. 
 
  - "chem_id.txt" and "gene_id.txt" are the chemical names and gene Entrez IDs. 
+
+## Run Case Study
+
+To predict target genes with our data used in the case study for a chemical, code in [RunCaseStudy](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/tree/main/RunCaseStudy) can be used to generate corresponding data and run CMMC.
+
+Before run data generation, i.e., generate the 200 different dataset similar to our case study, users can use the code in [generateChemSimilarity](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/tree/main/RunCaseStudy/generateChemSimilarity) to generate the overall chemical similarities and use the code in [generateGeneSimilarity](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/tree/main/RunCaseStudy/generateGeneSimilarity) to generate the overall gene similarities. Then, run [1.generate.data.py](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/blob/main/RunCaseStudy/1.generate.data.py) to generate the 200 different sets. 
+
+The name of the chemical that used in this testing should be save in the [chem.txt](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/blob/main/RunCaseStudy/chem.txt) file. 
+
+Example of running data generation:
+
+python 1.generate.data.py -C ./inputfolder/chem.txt -I ./inputfolder/ -O ./outputfolder/ -s 122 -N 1
+
+Run 
+
+1.generate.data.py -h 
+
+for detils.
