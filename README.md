@@ -47,6 +47,32 @@ Example of running data generation:
 
 Run 
 
-<pre><code> python 1.generate.data.py -h </code></pre>
+<pre><code> python 1.generate.data.py -h 
+            usage: generate.data.py [-h] [-C CHEMICALSNAME] [-I INPUTDIR] [-O OUTPUTDIR]
+                        [-c NUMOFCHEM] [-g NUMOFGENE] [-s SEED] [-N NUM_COL]
+
+            This code is used to generate the case matrix datasets from processed CTD data
+            for CMMC run.
+
+            optional arguments:
+              -h, --help            show this help message and exit
+              -C CHEMICALSNAME, --ChemicalsName CHEMICALSNAME
+                                    The text file that contains the chemical you would
+                                    like to test
+              -I INPUTDIR, --InputDir INPUTDIR
+                                    folder contains the data that used to generate the
+                                    matrices
+              -O OUTPUTDIR, --OutputDir OUTPUTDIR
+                                    folder for storing the matrices
+              -c NUMOFCHEM, --numofchem NUMOFCHEM
+                                    default is 300
+              -g NUMOFGENE, --numofgene NUMOFGENE
+                                    default is 500
+              -s SEED, --seed SEED  random seed for generate each matrix
+              -N NUM_COL, --num_col NUM_COL
+                                    main data column selected, N1 or N2, use 1 for N1 as
+                                    recommended
+
+</code></pre>
 
 for detils.
