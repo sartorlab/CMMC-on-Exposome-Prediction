@@ -152,10 +152,10 @@ int main(int argc, char** argv)
     mat MXX,MYY,MXY,Omega,W,D,I,MXY_hat;
     int a,b,s;
     // four hyperparameters
-    double xscale = 0.5;
-    double yscale = 0.5;
-    double xepsilon = 0.5;
-    double yepsilon = 0.5;
+    double xscale = 0.9;
+    double yscale = 0.9;
+    double xepsilon = 0.9;
+    double yepsilon = 0.9;
 
     int iter_num = 1; // interation number
     field<mat> C(2, 1); // declare a field var to hold two processed coupled matrices
