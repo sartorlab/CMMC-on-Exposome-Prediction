@@ -39,7 +39,7 @@ To predict target genes with our data used in the case study for a chemical, cod
 
 Before run data generation, i.e., generate the 200 different dataset similar to our case study, users can use the code in [generateChemSimilarity](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/tree/main/RunCaseStudy/generateChemSimilarity) to generate the overall chemical similarities and use the code in [generateGeneSimilarity](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/tree/main/RunCaseStudy/generateGeneSimilarity) to generate the overall gene similarities. Then, run [1.generate.data.py](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/blob/main/RunCaseStudy/1.generate.data.py) to generate the 200 different sets. 
 
-The name of the chemical that used in this testing should be save in the [chem.txt](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/blob/main/RunCaseStudy/chem.txt) file. 
+The name of the chemical that used in this testing should be saved in the [chem.txt](https://github.com/sartorlab/CMMC-on-Exposome-Prediction/blob/main/RunCaseStudy/chem.txt) file. 
 
 Example of running data generation:
 
